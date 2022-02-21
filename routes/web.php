@@ -5,6 +5,11 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\WebController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\newController;
+use App\Http\Controllers\programController;
+use App\Http\Controllers\AboutasController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,12 +57,34 @@ use App\Http\Controllers\ArticleController;
 //Nomor1
 //Route::get('/', [HomeController::class, 'index']); 
 //Route::get('/', [AboutController::class, 'index']); 
-Route::get('/', [ArticleController::class, 'index']);
+//Route::get('/', [ArticleController::class, 'index']);
 //Nomor2
 //Route::get('/about', [HomeController::class, 'about']); 
 //Route::get('/about', [AboutController::class, 'about']); 
-Route::get('/about', [ArticleController::class, 'about']); 
+//Route::get('/about', [ArticleController::class, 'about']); 
 //Nomor3
 //Route::get('/articles/{id}', [HomeController::class, 'articles']); 
 //Route::get('/articles/{id}', [AboutController::class, 'articles']); 
-Route::get('/articles/{id}', [ArticleController::class, 'articles']); 
+//Route::get('/articles/{id}', [ArticleController::class, 'articles']); 
+
+//PRAKTIKUM3
+//Nomor1
+Route::prefix('home')->group(function () {
+    Route::get('/', [ProductController::class, 'home'] );
+});
+//Nomor2
+Route::prefix('product')->group(function () {
+    Route::get('/{id}', [ProductController::class, 'products'] );
+});
+//Nomor3
+Route::prefix('new')->group(function () {
+    Route::get('/{id}', [ProductController::class, 'new'] );
+});
+//Nomor4
+Route::prefix('program')->group(function () {
+    Route::get('/{id}', [ProductController::class, 'program'] );
+});
+//Nomor5
+Route::prefix('aboutus')->group(function () {
+    Route::get('/', [ProductController::class, 'aboutus'] );
+});
