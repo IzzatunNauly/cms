@@ -10,6 +10,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\newController;
 use App\Http\Controllers\programController;
 use App\Http\Controllers\AboutasController;
+use views\layouts\masterView;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -69,22 +70,29 @@ use App\Http\Controllers\AboutasController;
 
 //PRAKTIKUM3
 //Nomor1
-Route::prefix('home')->group(function () {
-    Route::get('/', [ProductController::class, 'home'] );
-});
+//Route::prefix('home')->group(function () {
+//   Route::get('/', [ProductController::class, 'home'] );
+//});
 //Nomor2
-Route::prefix('product')->group(function () {
-    Route::get('/{id}', [ProductController::class, 'products'] );
-});
+//Route::prefix('product')->group(function () {
+//    Route::get('/{id}', [ProductController::class, 'products'] );
+//});
 //Nomor3
-Route::prefix('new')->group(function () {
-    Route::get('/{id}', [ProductController::class, 'new'] );
-});
+//Route::prefix('new')->group(function () {
+//    Route::get('/{id}', [ProductController::class, 'new'] );
+//});
 //Nomor4
-Route::prefix('program')->group(function () {
-    Route::get('/{id}', [ProductController::class, 'program'] );
-});
+//Route::prefix('program')->group(function () {
+//    Route::get('/{id}', [ProductController::class, 'program'] );
+//});
 //Nomor5
-Route::prefix('aboutus')->group(function () {
-    Route::get('/', [ProductController::class, 'aboutus'] );
+//Route::prefix('aboutus')->group(function () {
+//    Route::get('/', [ProductController::class, 'aboutus'] );
+//});
+//Auth::routes();
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/home', function () {
+    return view('home');
 });
