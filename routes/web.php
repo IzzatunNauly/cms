@@ -94,5 +94,5 @@ use views\layouts\masterView;
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/home', function () {
-    return view('home');
+   return view('home');
 });

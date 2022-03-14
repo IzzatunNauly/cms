@@ -79,35 +79,46 @@
                     <div class="item">
                           <img src="images/thumb1.png" width="226" height="225" alt="sliderimg" class="wow flipInX"
                            data-wow-delay=".8s"> 
-                          <h3>Pasta Capellini</h3>
+                          <h3>Pasta Kapelini</h3>
                       </div> <!-- end of item-->
                       
                    <div class="item2">
                           <img src="images/thumb2.jpg" width="226" height="225" alt="sliderimg" class="wow flipInX"
                            data-wow-delay=".8s"> 
-                          <h3>Pasta Pillus</h3>
+                          <h3>Pasta Kapulaga</h3>
                       </div> <!-- end of item-->
                       
                    <div class="item3">
                           <img src="images/thumb3.png" width="226" height="225" alt="sliderimg" class="wow flipInX"
                            data-wow-delay=".8s"> 
-                          <h3>Pasta Fusilli</h3>
+                          <h3>Pasta Jinten</h3>
                       </div> <!-- end of item-->
                   </li>
                    <li class="slide">
                     <div class="item">
                           <img src="images/thumb1.png" width="226" height="225" alt="sliderimg" > 
-                          <h3>Pasta Capellini</h3>
+                          <h3>Pasta Saus Padang</h3>
                       </div> <!-- end of item-->
                       
                    <div class="item2">
                           <img src="images/thumb2.jpg" width="226" height="225" alt="sliderimg"> 
-                          <h3>Pasta Pillus</h3>
+                          <h3>Pasta Carbonara</h3>
                       </div> <!-- end of item-->
                       
                    <div class="item3">
                           <img src="images/thumb3.png" width="226" height="225" alt="sliderimg"> 
-                          <h3>Pasta Fusilli</h3>
+                          <h3>Pasta Saus Tomat</h3>
+                      </div> <!-- end of item-->
+                  </li>
+                  <li class="slide">
+                    <div class="item">
+                          <img src="images/thumb1.png" width="226" height="225" alt="sliderimg" > 
+                          <h3>Pasta Pedas</h3>
+                      </div> <!-- end of item-->
+                      
+                   <div class="item2">
+                          <img src="images/thumb2.jpg" width="226" height="225" alt="sliderimg"> 
+                          <h3>Pasta Spesial</h3>
                       </div> <!-- end of item-->
                   </li>
                    
