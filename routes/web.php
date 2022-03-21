@@ -11,6 +11,8 @@ use App\Http\Controllers\newController;
 use App\Http\Controllers\programController;
 use App\Http\Controllers\AboutasController;
 use views\layouts\masterView;
+use database\seeders\UserBaruSeeder;
+use database\seeders\UserSeeder;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
