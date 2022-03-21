@@ -89,10 +89,10 @@ use views\layouts\masterView;
 //Route::prefix('aboutus')->group(function () {
 //    Route::get('/', [ProductController::class, 'aboutus'] );
 //});
-//Auth::routes();
+Auth::routes();
 
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/home', function () {
-   return view('home');
-});
+// Route::get('/login', function () {
+//    return view('login');
+// });
