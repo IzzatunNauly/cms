@@ -91,10 +91,12 @@ use database\seeders\UserSeeder;
 //Route::prefix('aboutus')->group(function () {
 //    Route::get('/', [ProductController::class, 'aboutus'] );
 //});
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Route::get('/login', function () {
 //    return view('login');
 // });
+
+Route::resource('articles', ArticleController::class);
